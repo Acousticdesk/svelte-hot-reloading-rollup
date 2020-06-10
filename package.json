@@ -1,0 +1,16 @@
+{
+  "name": "svelte-hot-reload-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-svelte": "^5.2.2",
+    "svelte": "^3.23.1"
+  }
+}
