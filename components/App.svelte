@@ -1,0 +1,1 @@
+<h1>Hello from Rollup Svelte component!</h1>

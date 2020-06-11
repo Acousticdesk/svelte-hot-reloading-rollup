@@ -1,4 +1,7 @@
-import svelte from 'rollup-plugin-svelte'
+import svelte from 'rollup-plugin-svelte-hot'
+import resolve from '@rollup/plugin-node-resolve';
+import serve from 'rollup-plugin-serve'
+import reload from 'rollup-plugin-livereload'
 
 export default {
     input: 'main.js',
@@ -7,6 +10,9 @@ export default {
       format: 'iife'
     },
     plugins: [
-        svelte(),
+        resolve(),
+        svelte({ hot: true }),
+        serve('public'),
+        reload(),
     ],
   };
